@@ -1,20 +1,27 @@
 import discord
-from Dgame import dgame
 from discord.ext import commands
+from discord.ext import tasks
+from itertools import cycle
 import os
+
 
 client = discord.Client()
 bot = commands.Bot(command_prefix = '고려야 ', help_command = None) 
 
+status = cycle(["고려봇에 오신 것을 환영합니다", "고려봇 βVer.1.1", "반갑습니다!"])    # 본인이 원하는 만큼 추가 가능
+
 @client.event
 async def on_ready():
-    print("login")
-    print(bot.user.name)
-    print(bot.user.id)
-    print("------------------")
-    game = ["안녕! 고려봇","고려봇에 오신 것을 환영합니다!"]
-    await dgame(bot, game, 10)
-    print("여기에 다른코드가 있으면 작동X")
+    print(f"[!] 다음으로 로그인에 성공했습니다.")
+    print(f"[!] 다음 : {client.user.name}")
+    print(f"[!] 다음 : {client.user.id}")
+    print(f"[!] 참가 중인 서버 : {len(client.guilds)}개의 서버에 참여 중\n")    # 참여 중인 서버 수
+
+    change_status.start()    # 봇이 on_ready 상태라면, change_message 함수 실행
+
+@tasks.loop(seconds=5)    # n초마다 다음 메시지 출력
+async def change_status():
+    await client.change_presence(activity=discord.Game(next(status)))
 
 @bot.command()
 async def 도움(ctx) :
