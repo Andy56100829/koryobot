@@ -363,7 +363,7 @@ async def 대전광역시(ctx) :
     await ctx.send(embed = embed)
     
 @bot.command(aliases=['광주','광주시'])
-async def 광역시(ctx) :
+async def 광주광역시(ctx) :
     embed=discord.Embed(title="광주광역시 🇰🇷", description="광주, 내일이 빛나는 기회도시", color=0xef4123)
     embed.set_author(name="대한민국 도•광역시")
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/999236802420424754/2dc6c9c4c9dac45d.png")
