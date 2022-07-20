@@ -8,23 +8,23 @@ import os
 client = discord.Client()
 bot = commands.Bot(command_prefix = '고려야 ', help_command = None) 
 
-status = cycle(["고려봇에 오신 것을 환영합니다", "고려봇 βVer.1.1", "반갑습니다!"])    # 본인이 원하는 만큼 추가 가능
+status = cycle(["고려봇에 오신 것을 환영합니다", "고려봇 βVer.β 1.1", "반갑습니다!"])
 
 @client.event
 async def on_ready():
     print(f"[!] 다음으로 로그인에 성공했습니다.")
     print(f"[!] 다음 : {client.user.name}")
     print(f"[!] 다음 : {client.user.id}")
-    print(f"[!] 참가 중인 서버 : {len(client.guilds)}개의 서버에 참여 중\n")    # 참여 중인 서버 수
+    print(f"[!] 참가 중인 서버 : {len(client.guilds)}개의 서버에 참여 중\n")
 
-    change_status.start()    # 봇이 on_ready 상태라면, change_message 함수 실행
+    change_status.start()
 
-@tasks.loop(seconds=5)    # n초마다 다음 메시지 출력
+@tasks.loop(seconds=5)
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-@client.event
-async def 도움(ctx) :
+@bot.command(aliases=['도움말','사용법','설명'])
+async def 도움(ctx):
     embed=discord.Embed(title="도움말 및 커맨드", description="접두사는 '고려야' 입니다 커맨드 사용시 꼭 붙여주셔야 합니다", color=0xfedc89)
     embed.set_author(name="고려봇")
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/987391627955941426/Royal_flag_of_Goryeo_Bong-gi_Fringeless.png")
