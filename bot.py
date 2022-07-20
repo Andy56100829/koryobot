@@ -396,7 +396,7 @@ async def 울산광역시(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/996789401952727102/999238496336216065/unknown.png")
     await ctx.send(embed = embed)
     
-@bot.command(aliases=['세종','세종시'])
+@bot.command(aliases=['세종','세종시','세종특별자치')
 async def 세종특별자치시(ctx) :
     embed=discord.Embed(title="세종특별자치시 🇰🇷", description="풍요로운 삶, 품격있는 세종", color=0x0fb5ed)
     embed.set_author(name="대한민국 도•광역시")
@@ -411,6 +411,21 @@ async def 세종특별자치시(ctx) :
     embed.add_field(name="GDP", value="116억$", inline=False)
     embed.add_field(name="1인당GDP", value="33,432$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999322501538656277/unknown.png")
+    await ctx.send(embed = embed)
+
+@bot.command(aliases=['평양'])
+async def 평양시(ctx) :
+    embed=discord.Embed(title="평양시 🇰🇵", description="", color=0xd40000)
+    embed.set_author(name="조선민주주의인민공화국 도•직할시")
+    embed.set_thumbnail(url="https://media.discordapp.net/attachments/597758831631532032/999334559839694928/IMG_8212.png")
+    embed.add_field(name="당위원회책임비서", value="김영환 <:ppk:999331706593095700>", inline=False)
+    embed.add_field(name="인민위원장", value="최희태 <:ppk:999331706593095700>", inline=False)
+    embed.add_field(name="시 소재지", value="중구역 중성동", inline=False)
+    embed.add_field(name="행정구역", value="19구역 2군 1동", inline=False)
+    embed.add_field(name="인구", value="약 2,999,466명", inline=False)
+    embed.add_field(name="인구밀도", value="약 1,622명/㎢", inline=False)
+    embed.add_field(name="면적", value="약 1,849㎢", inline=False)
+    embed.set_image(url="https://media.discordapp.net/attachments/597758831631532032/999342994836697088/IMG_8214.jpg?width=1170&height=692")
     await ctx.send(embed = embed)
 
 bot.run(os.environ['token'])
