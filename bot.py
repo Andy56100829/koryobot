@@ -261,7 +261,7 @@ async def 경상북도(ctx) :
     
 @bot.command(aliases=['경남'])
 async def 경상남도(ctx) :
-    embed=discord.Embed(title="경상남도 🇰🇷", description="경북의 힘으로! 새로운 대한민국", color=0x0071bb)
+    embed=discord.Embed(title="경상남도 🇰🇷", description="활기찬 경남, 행복한 도민", color=0xf15a38)
     embed.set_author(name="대한민국 도•광역시")
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/999221538702241852/616e57ddf70c0688.png")
     embed.add_field(name="도지사", value="박완수 <:ppp:996806277600641054>", inline=False)
