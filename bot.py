@@ -23,7 +23,7 @@ async def on_ready():
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
-@bot.command()
+@client.event
 async def 도움(ctx) :
     embed=discord.Embed(title="도움말 및 커맨드", description="접두사는 '고려야' 입니다 커맨드 사용시 꼭 붙여주셔야 합니다", color=0xfedc89)
     embed.set_author(name="고려봇")
