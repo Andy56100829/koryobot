@@ -395,5 +395,22 @@ async def 울산광역시(ctx) :
     embed.add_field(name="1인당GDP", value="55,418$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/996789401952727102/999238496336216065/unknown.png")
     await ctx.send(embed = embed)
+    
+@bot.command(aliases=['세종','세종시'])
+async def 세종특별자치시(ctx) :
+    embed=discord.Embed(title="세종특별자치시 🇰🇷", description="풍요로운 삶, 품격있는 세종", color=0x0fb5ed)
+    embed.set_author(name="대한민국 도•광역시")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/999322501039530154/7cb6e13e14c32d7d.png")
+    embed.add_field(name="시장", value="최민호 <:ppp:996806277600641054>", inline=False)
+    embed.add_field(name="교육감", value="최교진 <:prg:996811071962763284>", inline=False)
+    embed.add_field(name="시청", value="한누리대로 2130", inline=False)
+    embed.add_field(name="행정구역", value="1읍 9면 12동", inline=False)
+    embed.add_field(name="인구", value="380,215명", inline=False)
+    embed.add_field(name="인구밀도", value="817.84명/㎢", inline=False)
+    embed.add_field(name="면적", value="464.9㎢", inline=False)
+    embed.add_field(name="GDP", value="116억$", inline=False)
+    embed.add_field(name="1인당GDP", value="33,432$", inline=False)
+    embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999322501538656277/unknown.png")
+    await ctx.send(embed = embed)
 
 bot.run(os.environ['token'])
