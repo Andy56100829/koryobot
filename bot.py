@@ -142,7 +142,7 @@ async def 서울특별시(ctx) :
 
 @bot.command(aliases=['경기'])
 async def 경기도(ctx) :
-    embed=discord.Embed(title="경기도 🇰🇷", description="새로운 경기 공정한 세상", color=0x004097)
+    embed=discord.Embed(title="경기도 🇰🇷", description="변화의 중심, 기회의 경기", color=0x004097)
     embed.set_author(name="대한민국 도•광역시")
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/989233342811603004/2e853beccb00c956.png")
     embed.add_field(name="도지사", value="김동연 <:dpk:996806299218100265>", inline=False)
@@ -157,7 +157,7 @@ async def 경기도(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/989233306144997436/unknown.png")
     await ctx.send(embed = embed)
 
-@bot.command(aliases=['강원'])
+@bot.command(aliases=['강원','강원특별자치','강원특별자치도'])
 async def 강원도(ctx) :
     embed=discord.Embed(title="강원도 🇰🇷", description="새로운 강원도! 특별자치시대!", color=0x00ab84)
     embed.set_author(name="대한민국 도•광역시")
@@ -206,6 +206,23 @@ async def 충청남도(ctx) :
     embed.add_field(name="GDP", value="1,049억$", inline=False)
     embed.add_field(name="1인당GDP", value="51,711$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/996820624284581969/unknown.png")
+    await ctx.send(embed = embed)
+    
+@bot.command(aliases=['전북'])
+async def 전라북도(ctx) :
+    embed=discord.Embed(title="전라북도 🇰🇷", description="천년의 비상, 전라북도", color=0x64a70b)
+    embed.set_author(name="대한민국 도•광역시")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/999202020756045864/b6ca8973d0485271.png")
+    embed.add_field(name="도지사", value="김관영 <:dpk:996806299218100265>", inline=False)
+    embed.add_field(name="교육감", value="서거석 <:prg:996811071962763284>", inline=False)
+    embed.add_field(name="도청", value="전주시 완산구 효자로 225", inline=False)
+    embed.add_field(name="행정구역", value="6시 8군", inline=False)
+    embed.add_field(name="인구", value="1,778,279명", inline=False)
+    embed.add_field(name="인구밀도", value="221.95명/㎢", inline=False)
+    embed.add_field(name="면적", value="8,069.8㎢", inline=False)
+    embed.add_field(name="GDP", value="489억$", inline=False)
+    embed.add_field(name="1인당GDP", value="27,312$", inline=False)
+    embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999202021070602241/unknown.png")
     await ctx.send(embed = embed)
 
 bot.run(os.environ['token'])
