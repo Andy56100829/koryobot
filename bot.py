@@ -415,7 +415,7 @@ async def 세종특별자치시(ctx) :
 
 @bot.command(aliases=['평양'])
 async def 평양시(ctx) :
-    embed=discord.Embed(title="평양시 🇰🇵", description="", color=0xd40000)
+    embed=discord.Embed(title="평양시 🇰🇵", description="대한민국의 미수복지역", color=0xd40000)
     embed.set_author(name="조선민주주의인민공화국 도•직할시")
     embed.set_thumbnail(url="https://media.discordapp.net/attachments/597758831631532032/999334559839694928/IMG_8212.png")
     embed.add_field(name="당위원회책임비서", value="김영환 <:ppk:999331706593095700>", inline=False)
