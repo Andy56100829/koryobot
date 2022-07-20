@@ -12,9 +12,9 @@ status = cycle(["고려봇에 오신 것을 환영합니다", "고려봇 Ver.β 
 @bot.event
 async def on_ready():
     print(f"[!] 다음으로 로그인에 성공했습니다.")
-    print(f"[!] 다음 : {client.user.name}")
-    print(f"[!] 다음 : {client.user.id}")
-    print(f"[!] 참가 중인 서버 : {len(client.guilds)}개의 서버에 참여 중\n")    # 참여 중인 서버 수
+    print(f"[!] 다음 : {bot.user.name}")
+    print(f"[!] 다음 : {bot.user.id}")
+    print(f"[!] 참가 중인 서버 : {len(bot.guilds)}개의 서버에 참여 중\n")    # 참여 중인 서버 수
 
     change_status.start()    # 봇이 on_ready 상태라면, change_message 함수 실행
 
