@@ -224,5 +224,22 @@ async def 전라북도(ctx) :
     embed.add_field(name="1인당GDP", value="27,312$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999202021070602241/unknown.png")
     await ctx.send(embed = embed)
+    
+@bot.command(aliases=['전남'])
+async def 전라남도(ctx) :
+    embed=discord.Embed(title="전라남도 🇰🇷", description="세계로 웅비하는 대도약! 전남 행복시대", color=0xffcd00)
+    embed.set_author(name="대한민국 도•광역시")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/999204825868808272/965fb6188eebeef2.png")
+    embed.add_field(name="도지사", value="김영록 <:dpk:996806299218100265>", inline=False)
+    embed.add_field(name="교육감", value="김대중 <:prg:996811071962763284>", inline=False)
+    embed.add_field(name="도청", value="무안군 삼향읍 오룡길 1", inline=False)
+    embed.add_field(name="행정구역", value="5시 17군", inline=False)
+    embed.add_field(name="인구", value="1,826,440명", inline=False)
+    embed.add_field(name="인구밀도", value="147.95명/㎢", inline=False)
+    embed.add_field(name="면적", value="12,358.9㎢", inline=False)
+    embed.add_field(name="GDP", value="718억$", inline=False)
+    embed.add_field(name="1인당GDP", value="40,754$", inline=False)
+    embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999203824906534912/unknown.png")
+    await ctx.send(embed = embed)
 
 bot.run(os.environ['token'])
