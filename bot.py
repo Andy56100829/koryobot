@@ -276,5 +276,22 @@ async def 경상남도(ctx) :
     embed.add_field(name="1인당GDP", value="30,800$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999221538979061830/unknown.png")
     await ctx.send(embed = embed)
+    
+@bot.command(aliases=['제주도','제주특별자치'])
+async def 제주특별자치도(ctx) :
+    embed=discord.Embed(title="제주특별자치도 🇰🇷", description="다함께 미래로, 빛나는 제주", color=0xf58220)
+    embed.set_author(name="대한민국 도•광역시")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/999226825295269898/e796241640261274.png")
+    embed.add_field(name="도지사", value="오영훈 <:dpk:996806299218100265>", inline=False)
+    embed.add_field(name="교육감", value="김광수 <:rht:996811088974844004>", inline=False)
+    embed.add_field(name="도청", value="제주시 문연로 6", inline=False)
+    embed.add_field(name="행정구역", value="2시", inline=False)
+    embed.add_field(name="인구", value="678,012명", inline=False)
+    embed.add_field(name="인구밀도", value="365.41명/㎢", inline=False)
+    embed.add_field(name="면적", value="1,850.2㎢", inline=False)
+    embed.add_field(name="GDP", value="179억$", inline=False)
+    embed.add_field(name="1인당GDP", value="26,818$", inline=False)
+    embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999226825752444998/unknown.png")
+    await ctx.send(embed = embed)
 
 bot.run(os.environ['token'])
