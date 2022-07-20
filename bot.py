@@ -8,7 +8,7 @@ import os
 client = discord.Client()
 bot = commands.Bot(command_prefix = '고려야 ', help_command = None) 
 
-status = cycle(["고려봇에 오신 것을 환영합니다", "고려봇 βVer.β 1.1", "반갑습니다!"])
+status = cycle(["고려봇에 오신 것을 환영합니다", "고려봇 Ver.β 1.1", "반갑습니다!"])
 
 @client.event
 async def on_ready():
