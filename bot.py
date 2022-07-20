@@ -20,7 +20,7 @@ async def on_ready():
 
 @tasks.loop(seconds=5)    # n초마다 다음 메시지 출력
 async def change_status():
-    await client.change_presence(activity=discord.Game(next(status)))
+    await bot.change_presence(activity=discord.Game(next(status)))
 
 @bot.command(aliases=['도움말','사용법','설명'])
 async def 도움(ctx) :
