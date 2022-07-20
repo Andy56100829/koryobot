@@ -172,6 +172,7 @@ async def 강원도(ctx) :
     embed.add_field(name="GDP", value="449억$", inline=False)
     embed.add_field(name="1인당GDP", value="32,235$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/996816528286683176/unknown.png")
+    embed.set_footer(text="미수복 강원도 지역은 '고려야 미수복 강원도'를 통해 참조해주세요")
     await ctx.send(embed = embed)
 
 @bot.command(aliases=['충북'])
