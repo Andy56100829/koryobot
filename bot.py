@@ -60,7 +60,7 @@ async def 국민의힘(ctx) :
     embed.add_field(name="기초단체장", value="145석-64.15%", inline=True)
     embed.add_field(name="광역의원", value="540석-61.92%", inline=True)
     embed.add_field(name="기초의원", value="1435석-48.02%", inline=True)
-    embed.add_field(name="대표", value="이준석", inline=True)
+    embed.add_field(name="대표", value="이준석-직무정지", inline=True)
     embed.add_field(name="원내대표", value="권성동", inline=True)
     embed.add_field(name="사무총장", value="한기호", inline=True)
     embed.add_field(name="정책위의장", value="성일종", inline=True)
