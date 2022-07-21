@@ -429,7 +429,6 @@ async def 평양시(ctx) :
     embed.set_image(url="https://media.discordapp.net/attachments/597758831631532032/999342994836697088/IMG_8214.jpg?width=1170&height=692")
     await ctx.send(embed = embed)
     
-    
 @bot.command(aliases=['함남'])
 async def 함경남도(ctx) :
     embed=discord.Embed(title="함경남도 🇰🇵", description="대한민국의 미수복지역", color=0xd40000)
