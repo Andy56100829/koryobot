@@ -549,8 +549,8 @@ async def 자강도(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999591581575286794/unknown.png")
     await ctx.send(embed = embed)
     
-@bot.command(aliases=['미수복 강원'])
-async def 미수복 강원도(ctx) :
+@bot.command(aliases=['미수복강원'])
+async def 미수복강원도(ctx) :
     embed=discord.Embed(title="강원도 🇰🇵", description="대한민국의 미수복지역", color=0xd40000)
     embed.set_author(name="조선민주주의인민공화국 도•직할시")
     embed.set_thumbnail(url="https://media.discordapp.net/attachments/597758831631532032/999334559839694928/IMG_8212.png")
