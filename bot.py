@@ -29,6 +29,7 @@ async def 도움(ctx) :
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/987391627955941426/Royal_flag_of_Goryeo_Bong-gi_Fringeless.png")
     embed.add_field(name="정당-고려야 '정당 이름'", value="원내정당에 대한 정보를 제공합니다", inline=False)
     embed.add_field(name="도•광역시-고려야 '도•또는 광역시 이름'", value="북한•미수복지역 포함 전국 도•광역시의 정보를 제공합니다", inline=False)
+    embed.add_field(name="도•광역시-고려야 '시•군 이름'", value="전국 시•군의 정보를 제공합니다", inline=False)
     embed.add_field(name="고려야 ????", value="다음 업데이트에 추가됩니다", inline=False)
     embed.set_footer(text="고려봇 ver.β 1.2")
     await ctx.send(embed = embed)
