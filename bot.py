@@ -670,5 +670,4 @@ async def 용인특례시(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/1007331605225930802/unknown.png")
     await ctx.send(embed = embed)
 
-    
 bot.run(os.environ['token'])
