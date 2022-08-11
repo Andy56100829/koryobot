@@ -398,7 +398,6 @@ async def 울산광역시(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/996789401952727102/999238496336216065/unknown.png")
     await ctx.send(embed = embed)
     
-
 @bot.command(aliases=['세종','세종시'])
 async def 세종특별자치시(ctx) :
     embed=discord.Embed(title="세종특별자치시 🇰🇷", description="풍요로운 삶, 품격있는 세종", color=0x0fb5ed)
