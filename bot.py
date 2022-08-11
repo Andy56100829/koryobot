@@ -661,7 +661,7 @@ async def 용인특례시(ctx) :
     embed.add_field(name="광역자치단체", value="경기도", inline=False)
     embed.add_field(name="행정구역", value="3구 4읍 3면 31동", inline=False)
     embed.add_field(name="인구", value="1,078,451명명", inline=False)
-    embed.add_field(name="인구밀도", value="1,820.31명/㎢[", inline=False)
+    embed.add_field(name="인구밀도", value="1,820.31명/㎢", inline=False)
     embed.add_field(name="면적", value="591.26㎢", inline=False)
     embed.add_field(name="지역번호", value="031", inline=False)
     embed.add_field(name="특산물", value="용인 오이🥒", inline=False)
