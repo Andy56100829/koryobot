@@ -544,7 +544,7 @@ async def 대전광역시(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999235226301628417/unknown.png")
     await ctx.send(embed = embed)
     
-@bot.command(aliases=['광주','광주시'])
+@bot.command
 async def 광주광역시(ctx) :
     embed=discord.Embed(title="광주광역시 🇰🇷", description="광주, 내일이 빛나는 기회도시", color=0xef4123)
     embed.set_author(name="대한민국 도•광역시")
@@ -559,6 +559,7 @@ async def 광주광역시(ctx) :
     embed.add_field(name="GDP", value="383억$", inline=False)
     embed.add_field(name="1인당GDP", value="25,770$", inline=False)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999236802827259935/unknown.png")
+    embed.set_footer(text="경기도의 시 '광주시'는 '고려야 광주시'를 통해 참조해주세요")
     await ctx.send(embed = embed)
     
 @bot.command(aliases=['울산','울산시'])
