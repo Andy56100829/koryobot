@@ -544,7 +544,7 @@ async def 대전광역시(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/999235226301628417/unknown.png")
     await ctx.send(embed = embed)
     
-@bot.command
+@bot.command()
 async def 광주광역시(ctx) :
     embed=discord.Embed(title="광주광역시 🇰🇷", description="광주, 내일이 빛나는 기회도시", color=0xef4123)
     embed.set_author(name="대한민국 도•광역시")
@@ -887,6 +887,25 @@ async def 광명시(ctx) :
     embed.add_field(name="국회의원<:congress:1007322810034688151>", value="광명시 갑을", inline=False)
     embed.add_field(name="더불어민주당<:dpk:996806299218100265>", value="2석", inline=True)
     embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/1008056830192271420/unknown.png")
+    await ctx.send(embed = embed)
+    
+@bot.command(aliases=['광주','광주군'])
+async def 광주시(ctx) :
+    embed=discord.Embed(title="광주시 🇰🇷", description="Clean Gwangju", color=0x33b540)
+    embed.set_author(name="대한민국 시•군")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/1008061709702934540/1c6ebee312d9e37a.png")
+    embed.add_field(name="시장", value="방세환 <:ppp:996806277600641054>", inline=False)
+    embed.add_field(name="시청", value="행정타운로 50 (송정동)", inline=False)
+    embed.add_field(name="광역자치단체", value="경기도", inline=False)
+    embed.add_field(name="행정구역", value="3읍 4면 6동", inline=False)
+    embed.add_field(name="인구", value="389,876명", inline=False)
+    embed.add_field(name="인구밀도", value="903.69명/㎢", inline=False)
+    embed.add_field(name="면적", value="430.99㎢", inline=False)
+    embed.add_field(name="지역번호", value="031", inline=False)
+    embed.add_field(name="특산물", value="광주 퇴촌 토마토🍅", inline=False)
+    embed.add_field(name="국회의원<:congress:1007322810034688151>", value="광주시 갑을", inline=False)
+    embed.add_field(name="더불어민주당<:dpk:996806299218100265>", value="2석", inline=True)
+    embed.set_image(url="https://cdn.discordapp.com/attachments/597758831631532032/1008061709031837797/unknown.png")
     await ctx.send(embed = embed)
 
 @bot.command(aliases=['구리','구리군'])
