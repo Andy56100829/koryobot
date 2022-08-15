@@ -874,7 +874,7 @@ async def 과천시(ctx) :
 async def 광명시(ctx) :
     embed=discord.Embed(title="광명시 🇰🇷", description="함께하는 시민 웃는 광명", color=0xf08300)
     embed.set_author(name="대한민국 시•군")
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/1007331240568954970/3660d70f6c4c542c.png")
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/597758831631532032/1008056830603300924/fd5f7a1631e665a9.png")
     embed.add_field(name="시장", value="박승원 <:dpk:996806299218100265>", inline=False)
     embed.add_field(name="시청", value="시청로 20 (철산동)", inline=False)
     embed.add_field(name="광역자치단체", value="경기도", inline=False)
