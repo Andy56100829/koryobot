@@ -32,7 +32,7 @@ async def 도움(ctx) :
     embed.add_field(name="도•광역시-고려야 '도•또는 광역시 이름'", value="북한•미수복지역 포함 전국 도•광역시의 정보를 제공합니다", inline=False)
     embed.add_field(name="도•광역시-고려야 '시•군 이름'", value="전국 시•군의 정보를 제공합니다", inline=False)
     embed.add_field(name="고려야 ????", value="다음 업데이트에 추가됩니다", inline=False)
-    embed.set_footer(text="고려봇 ver.β 1.2")
+    embed.set_footer(text="고려봇 ver.β 1.3")
     await ctx.send(embed = embed)
 
 @bot.command(aliases=['더민주','민주당'])
