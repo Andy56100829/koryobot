@@ -1386,4 +1386,22 @@ async def 연천군(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008813393613967482/unknown.png")
     await ctx.send(embed = embed)
 
+@bot.command
+async def 여행자 정보 <@588718593727004704>(ctx) :
+    embed=discord.Embed(title="여행자 정보", description="<@588718593727004704>님의 여행정보", color=0x77d1ea)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008812769061118062/49f0f8df6fba8639.png")
+    embed.add_field(name="방문국가 수", value="🚩11개국", inline=False)
+    embed.add_field(name="방문도시 수", value="📍39개시", inline=False)
+    embed.add_field(name="🇶🇦", value="도하(경유)", inline=False)
+    embed.add_field(name="🇪🇸", value="마드리드-톨레도-미하스-론다-세비야-코르도바-발렌시아-세고비아-바르셀로나", inline=False)
+    embed.add_field(name="🇯🇵", value="사가현 사가-후쿠오카현 후쿠오카-나가사키현 나가사키-오사카부 오사카-교토부 교토-효고현 고베", inline=False)
+    embed.add_field(name="🇮🇹", value="로마-오르비에토-피렌체-밀라노-베니스-라스페치아-친퀘테레-폼페이-소렌토-아나카프리-나폴리-피우미치노", inline=False)
+    embed.add_field(name="🇻🇦", value="바티칸 시티", inline=False)
+    embed.add_field(name="🇵🇱", value="바르샤바-올레시니차-브로츠와프-크라쿠프-비엘리치카-오시비엥침", inline=False)
+    embed.add_field(name="🇨🇿", value="프라하", inline=False)
+    embed.add_field(name="🇦🇹", value="빈", inline=False)
+    embed.add_field(name="🇭🇺", value="부다페스트", inline=False)
+    embed.add_field(name="🇸🇰", value="반스카비스트리차", inline=False)
+    await ctx.send(embed = embed)
+
 bot.run(os.environ['token'])
