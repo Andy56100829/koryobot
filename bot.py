@@ -1386,10 +1386,10 @@ async def 연천군(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008813393613967482/unknown.png")
     await ctx.send(embed = embed)
 
-@bot.command
-async def 여행자 정보 <@588718593727004704>(ctx) :
-    embed=discord.Embed(title="여행자 정보", description="<@588718593727004704>님의 여행정보", color=0x77d1ea)
-    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008812769061118062/49f0f8df6fba8639.png")
+@bot.command(aliases=['여행자<@588718593727004704>','여행기록<@588718593727004704>'])
+async def 여행<@588718593727004704>(ctx) :
+    embed=discord.Embed(title="최근 여행국가", description="폴란드🇵🇱", color=0xfabe00)
+    embed.set_author(name="여행자 여행 정보")
     embed.add_field(name="방문국가 수", value="🚩11개국", inline=False)
     embed.add_field(name="방문도시 수", value="📍39개시", inline=False)
     embed.add_field(name="🇶🇦", value="도하(경유)", inline=False)
@@ -1402,6 +1402,7 @@ async def 여행자 정보 <@588718593727004704>(ctx) :
     embed.add_field(name="🇦🇹", value="빈", inline=False)
     embed.add_field(name="🇭🇺", value="부다페스트", inline=False)
     embed.add_field(name="🇸🇰", value="반스카비스트리차", inline=False)
-    await ctx.send(embed = embed)
+    embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008812769061118062/49f0f8df6fba8639.png")
+   
 
 bot.run(os.environ['token'])
