@@ -1293,7 +1293,7 @@ async def 포천시(ctx) :
 
 @bot.command(aliases=['하남','하남군'])
 async def 하남시(ctx) :
-    embed=discord.Embed(title="하남시 🇰🇷", description="평화로 만들어가는 행운의 도시 포천", color=0x1946ba)
+    embed=discord.Embed(title="하남시 🇰🇷", description="살고싶은 도시 도약하는 하남", color=0x1946ba)
     embed.set_author(name="대한민국 시•군")
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008806522941354104/879e3be6acf1f678.png")
     embed.add_field(name="시장", value="이현재 <:ppp:996806277600641054>", inline=False)
@@ -1386,8 +1386,8 @@ async def 연천군(ctx) :
     embed.set_image(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008813393613967482/unknown.png")
     await ctx.send(embed = embed)
 
-@bot.command(aliases=['여행자<@588718593727004704>','여행기록<@588718593727004704>'])
-async def 여행<@588718593727004704>(ctx) :
+@bot.command()
+async def 여행(ctx) :
     embed=discord.Embed(title="최근 여행국가", description="폴란드🇵🇱", color=0xfabe00)
     embed.set_author(name="여행자 여행 정보")
     embed.add_field(name="방문국가 수", value="🚩11개국", inline=False)
@@ -1403,6 +1403,6 @@ async def 여행<@588718593727004704>(ctx) :
     embed.add_field(name="🇭🇺", value="부다페스트", inline=False)
     embed.add_field(name="🇸🇰", value="반스카비스트리차", inline=False)
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1008422407817670742/1008812769061118062/49f0f8df6fba8639.png")
-   
+    await ctx.send(embed = embed)
 
 bot.run(os.environ['token'])
